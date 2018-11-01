@@ -1,7 +1,7 @@
 import requests
 import os
-import urllib2
 import sys
+import urllib.request
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import ffmpy
@@ -32,8 +32,8 @@ if __name__ == '__main__':
         abs_path = os.path.abspath(os.path.join(os.sep, os.getcwd(), thread_title))
 
         for i in tqdm(range(len(links))):
-            response = urllib2.urlopen(links[i])
-            fl = open(os.path.join(file_path + "/" + thread_title + "/" + "%i.webm" % i), 'w')
+            response = urllib.request.urlopen(links[i])
+            fl = open(os.path.join(file_path + "/" + thread_title + "/" + "%i.webm" % i), 'wb')
             fl.write(response.read())
             fl.close()
             ff = ffmpy.FFmpeg(inputs={abs_path + "/" + "%i.webm" % i: ["-loglevel", "panic"]},
@@ -43,5 +43,3 @@ if __name__ == '__main__':
             os.remove(fl.name)
 
         print("Done!")
-
-
