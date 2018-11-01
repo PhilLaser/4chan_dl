@@ -16,7 +16,7 @@ The following modules are used inside the code:
  * 'ffmpy' for converting the .webm into .mp4
 
 
-Usage: 4chan_dl.py <ThreadURL> <path_where_to_store_the_files>
+Usage: 4chan_dl.py \<ThreadURL> <path_where_to_store_the_files>
 
 Passing '-h' or '--help' as first argument, the usage message gets displayed.
 
