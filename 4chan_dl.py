@@ -13,7 +13,7 @@ def get_thread():
 
 if __name__ == '__main__':
     if sys.argv[1] == '-h' or sys.argv[1] == '--help':
-        print "Usage: 4chan_dl.py <ThreadURL> <path_where_to_store_the_files>"
+        print ("Usage: 4chan_dl.py <ThreadURL> <path_where_to_store_the_files>")
     else:
         url = sys.argv[1]  # url to parse
         file_path = sys.argv[2]  # path
