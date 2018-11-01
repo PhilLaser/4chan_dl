@@ -18,7 +18,7 @@ The following modules are used inside the code:
 
 Usage: 4chan_dl.py \<ThreadURL> <path_where_to_store_the_files>
 
-Passing '-h' or '--help' as first argument, the usage message gets displayed.
+Passing '-h' or '--help' as first argument prints the usage message.
 
 
 
