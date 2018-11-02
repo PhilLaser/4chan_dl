@@ -15,6 +15,7 @@ The following modules are used inside the code:
 
  * 'ffmpy' for converting the .webm into .mp4
 
+If you don't have them installed already, pip install them, then use it as follows.
 
 Usage: 4chan_dl.py \<ThreadURL> <path_where_to_store_the_files>
 
